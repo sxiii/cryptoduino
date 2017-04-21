@@ -5,7 +5,7 @@ Needed components:
 4) Potentiometer to control backlight contrast (up to 4.7 kOhm)
 5) Two cablepins for power
 6) One cablepin for backlight enabling
-7) Transistor of any kind (for example, irf540n) for backlight
+7) FET Transistor (for example, irf540n) for backlight
 
 Connecting schematics:
 1) Insert screen into the middle of arduino (pins 32~47)
