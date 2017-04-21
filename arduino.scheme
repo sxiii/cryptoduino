@@ -1,0 +1,18 @@
+Needed components:
+1) Arduino Mega 2560
+2) Ethernet shield
+3) Serial display (screen) 4004 (40 symbols, 4 rows)
+4) Potentiometer to control backlight contrast (up to 4.7 kOhm)
+5) Two cablepins for power
+6) One cablepin for backlight enabling
+7) Transistor of any kind (for example, irf540n) for backlight
+
+Connecting schematics:
+1) Insert screen into the middle of arduino (pins 32~47)
+2) Connect screen power to 5v and ground pins (on 4004 screen it's in bottom left if you look at the screen)
+3) Connect one leg of transistor (irf540n) to A13 pin, other two legs to K and ground
+4) Connect potentiometer to pins 44 and 43
+
+Flash the firmware and it should work: 
+* http://imgur.com/dRceN7b.png
+* http://imgur.com/RTQFlgV.png
