@@ -1,13 +1,14 @@
 # English
-This project aims to create an arduino cryptocurrency notificator display that 
-shows you current rates of different cryptocurrencies and notifies if something drastically changes.
-Currently it uses serial display 4004, arduino mega, ethernet shield and few other components (look at arduino.scheme)
-Takes data from bittrex but can be adopted to other exchanges.
+This project aims to create an arduino cryptocurrency notificator display that shows you current 
+rates of different cryptocurrencies and notifies if something drastically changes.
+Currently it uses serial display 4004, arduino mega, ethernet shield and few other components 
+(look at arduino.scheme). Takes data from bittrex but can be adopted to other exchanges.
 This version can only show rates (4 currencies: high, low and last trade at a time).
 
 # Russian
-Данный проект разработан как удобный нотификатор на основе ардуино и дислея, который
-умеет оказывать текущие курсы различных криптовалют и сообщает если происходят значительные изменения.
-Для сборки проекта вам необходим последовательный дисплей 4004, ардуино мега, ethernet shield и пара других компонентов
-(см. файл arduino.scheme). Данные берем с биржи bittrex но можно адаптировать и другие.
-В настоящий момент только отображает курсы на экране (4 криптовалютных пары: high, low и последняя цена).
+Данный проект разработан как удобный нотификатор на основе ардуино и дислея, который умеет 
+показывать текущие курсы различных криптовалют и сообщает если происходят значительные изменения.
+Для сборки проекта вам необходим последовательный дисплей 4004, ардуино мега, ethernet shield 
+и пара других компонентов (см. файл arduino.scheme). Данные берем с биржи bittrex но можно 
+адаптировать и другие. В настоящий момент только отображает курсы на экране (4 криптовалютных 
+пары: high, low и последняя цена).
