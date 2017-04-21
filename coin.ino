@@ -101,13 +101,18 @@ static void decode(const char* buffer, size_t bufferSize, LiquidCrystal& lcd, by
 
       const char* low = root["result"][0]["Low"];
 
-      printToDisplay(lcd, "low: ", 0, row, false);
+      printToDisplay(lcd, "", 0, row, false);
       printToDisplay(lcd, low, 0, row, false);
 
       const char* high = root["result"][0]["High"];
 
-      printToDisplay(lcd, " high: ", 0, row, false);
+      printToDisplay(lcd, " ", 0, row, false);
       printToDisplay(lcd, high, 0, row, false);
+
+      const char* last = root["result"][0]["Last"];
+
+      printToDisplay(lcd, " ", 0, row, false);
+      printToDisplay(lcd, last, 0, row, false);
     }
   } else {
     Serial.println("parseObject() failed");
