@@ -51,4 +51,4 @@ You're welcome to contribute to this project. Look at the task list for ideas.
 адаптировать и другие. В настоящий момент только отображает курсы на экране (4 криптовалютных 
 пары: high, low и последняя цена).
 
-![Img5](https://imgur.com/xCb04yg.png)
+![Img4](https://imgur.com/VjqN5r3.png)
