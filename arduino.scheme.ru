@@ -18,3 +18,5 @@
 Прошейте файл в ardino и должно заработать: 
 * http://imgur.com/dRceN7b.png
 * http://imgur.com/RTQFlgV.png
+* http://imgur.com/xCb04yg.png
+* http://imgur.com/kgKMCVL.png
