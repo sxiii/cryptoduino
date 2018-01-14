@@ -33,6 +33,7 @@ You're welcome to contribute to this project. Look at the task list for ideas.
 
 ## Task list (to-do)
 * Make the button to change displayed data (screen switcher)
+* Add other exchanges and switching possibility
 * Add some arbitrage options to compare rate on different exchanges
 
 ![Img2](https://imgur.com/40uHZSj.png)
