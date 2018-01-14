@@ -1,4 +1,4 @@
-## Description : English
+## Cryptoduino project description (English)
 This project aims to create an arduino cryptocurrency notificator display that shows you current 
 rates of different cryptocurrencies and notifies if something drastically changes.
 
