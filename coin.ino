@@ -1,3 +1,5 @@
+/* PIN defines */
+
 #define DB7 32
 #define DB6 33
 #define DB5 34
@@ -14,13 +16,17 @@
 #define VCC 45
 #define EN2 46
 
-#include <SPI.h>
-#include <Ethernet.h>
-#include <ArduinoJson.h>
-#include <LiquidCrystal.h>
+/* Include some libraries */
 
-LiquidCrystal lcd1(42, EN1, 35, 34, 33, 32);
-LiquidCrystal lcd2(42, EN2, 35, 34, 33, 32);
+#include <SPI.h>               /* SPI interface */
+#include <Ethernet.h>          /* Ethernet interface */
+#include <ArduinoJson.h>       /* JSON library */
+#include <LiquidCrystal.h>     /* Display library */
+
+LiquidCrystal lcd1(42, EN1, 35, 34, 33, 32);   /* These two rows required for 4004 screen to work */
+LiquidCrystal lcd2(42, EN2, 35, 34, 33, 32);   /* in a correct way. Maybe there is a better way */
+
+/* Print method */
 
 static void printToDisplay(LiquidCrystal& lcd, const char* data, byte column, byte row, boolean moveCursor) {
   if (moveCursor) {
@@ -29,6 +35,8 @@ static void printToDisplay(LiquidCrystal& lcd, const char* data, byte column, by
 
   lcd.print(data);
 }
+
+/* Connection */
 
 static void connect(Client& client, const char* server, const uint16_t& port) {
   if (!client.connected()) {
@@ -83,6 +91,8 @@ static boolean fetch(Client& client, char* buffer, size_t bufferSize, size_t req
   return true;
 }
 
+/* Extracting the results */
+
 static void decode(const char* buffer, size_t bufferSize, LiquidCrystal& lcd, byte row) {
   Serial.println(buffer);
 
@@ -119,6 +129,8 @@ static void decode(const char* buffer, size_t bufferSize, LiquidCrystal& lcd, by
   }
 }
 
+/* Setup output interface */
+
 void setup() {
   Serial.begin(115200);
   while (!Serial);
@@ -138,6 +150,8 @@ void setup() {
 
   delay(1000);
 }
+
+/* Loop with bittrex data */
 
 void loop()
 {
